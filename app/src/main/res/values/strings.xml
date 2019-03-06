@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">JobStart</string>
+    <string name="app_name">Jobstart</string>
+    <string name="calendars">CALENDARS</string>
+    <string name="job_postings">JOB POSTINGS</string>
+    <string name="find_us">FIND US</string>
+    <string name="donate">DONATE</string>
+    <string name="updates">UPDATES</string>
+    <string name="contact_us">CONTACT US</string>
+    <string name="list_of_calendars">list of calendars</string>
+    <string name="_2930_lake_shore_blvd_west">2930 Lake Shore Blvd. West</string>
+    <string name="islington_avenue_lake_shore_blvd_west"><![CDATA[(Islington Avenue & Lake Shore Blvd. West)]]></string>
+    <string name="jobstart_dufferin">JobStart Dufferin</string>
+    <string name="_219_dufferin_street_suite_1c">219 Dufferin Street, Suite #1C</string>
+    <string name="king_street_west_dufferin_street"><![CDATA[(King Street West & Dufferin Street]]></string>
+    <string name="jobstart_chauncey">JobStart Chauncey</string>
+    <string name="_41_chauncey_avenue">41 Chauncey Avenue</string>
+    <string name="islington_avenue_south_of_bloor_street_west"><![CDATA[(Islington Avenue & south of Bloor Street West)]]></string>
+    <string name="jobstart_lake_shore">JobStart Lake Shore</string>
 </resources>
