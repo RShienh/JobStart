@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,6 +35,21 @@ public class MainActivity extends AppCompatActivity {
 
         TextView calendars = findViewById(R.id.xCalendars);
         calendars.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CalendarsHome.class)));
+
+        TextView jobPostings = findViewById(R.id.xJobPostings);
+        jobPostings.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, JobsActivity.class)));
+
+        TextView findUs = findViewById(R.id.xFindUs);
+        findUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, FindUsActivity.class)));
+
+        TextView donateUs = findViewById(R.id.xDonate);
+        donateUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, DonateUs.class)));
+
+        TextView updates = findViewById(R.id.xUpdates);
+        updates.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, UpdatesActivity.class)));
+
+        TextView contactUs = findViewById(R.id.xContactUs);
+        contactUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ContactUsActivity.class)));
     }
 
     public static boolean hasPermissions(Context context, String... permissions) {

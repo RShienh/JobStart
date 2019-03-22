@@ -16,4 +16,7 @@
     <string name="_41_chauncey_avenue">41 Chauncey Avenue</string>
     <string name="islington_avenue_south_of_bloor_street_west"><![CDATA[(Islington Avenue & south of Bloor Street West)]]></string>
     <string name="jobstart_lake_shore">JobStart Lake Shore</string>
+    <string name="title_activity_find_us">Find Us</string>
+    <string name="location_name">Location Name</string>
+    <string name="location_direction">Location Direction</string>
 </resources>
