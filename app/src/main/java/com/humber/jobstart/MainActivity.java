@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         int all_permissions = 1;
         String[] permissions = {Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.CALL_PHONE,
                 Manifest.permission.ACCESS_COARSE_LOCATION,
                 Manifest.permission.WRITE_CALENDAR,
                 Manifest.permission.INTERNET,

@@ -19,4 +19,7 @@
     <string name="title_activity_find_us">Find Us</string>
     <string name="location_name">Location Name</string>
     <string name="location_direction">Location Direction</string>
+    <string name="lake_shore_location">Lake Shore Location</string>
+    <string name="dufferin_location">Dufferin Location</string>
+    <string name="chauncey_location">Chauncey Location</string>
 </resources>

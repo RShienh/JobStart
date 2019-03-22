@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textsize">20dp</dimen>
-    <dimen name="largertextview">24dp</dimen>
+    <dimen name="textsize">20sp</dimen>
+    <dimen name="largertextview">24sp</dimen>
 </resources>
