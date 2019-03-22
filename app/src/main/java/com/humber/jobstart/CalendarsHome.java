@@ -15,17 +15,17 @@ public class CalendarsHome extends AppCompatActivity {
 
         CardView mLakeShore = findViewById(R.id.xLakeShoreCalendar);
         mLakeShore.setOnClickListener(v -> {
-          //  startActivity(new Intent(CalendarsHome.this, CalendarLakeShore.class));
+            startActivity(new Intent(CalendarsHome.this, LakeCalendarActivity.class));
         });
 
         CardView mDufferin = findViewById(R.id.xDufferinCalendar);
         mDufferin.setOnClickListener(v -> {
-           // startActivity(new Intent(CalendarsHome.this, CalendarLakeShore.class));
+           startActivity(new Intent(CalendarsHome.this, DufferinCalendarActivity.class));
         });
 
         CardView mChauncey = findViewById(R.id.xChaunceyCalendar);
-        mLakeShore.setOnClickListener(v -> {
-          //  startActivity(new Intent(CalendarsHome.this, CalendarLakeShore.class));
+        mChauncey.setOnClickListener(v -> {
+            startActivity(new Intent(CalendarsHome.this, ChaunceyCalendarActivity.class));
         });
     }
 }
