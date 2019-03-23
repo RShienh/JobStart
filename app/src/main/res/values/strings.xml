@@ -22,4 +22,7 @@
     <string name="lake_shore_location">Lake Shore Location</string>
     <string name="dufferin_location">Dufferin Location</string>
     <string name="chauncey_location">Chauncey Location</string>
+    <string name="jobstart_at_lakeshore">JobStart at Lakeshore</string>
+    <string name="jobstart_at_dufferin">JobStart at Dufferin</string>
+    <string name="jobstart_at_chauncey">JobStart at Chauncey</string>
 </resources>
