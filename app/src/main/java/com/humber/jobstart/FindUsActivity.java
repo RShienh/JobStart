@@ -3,8 +3,6 @@ package com.humber.jobstart;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.location.Address;
-import android.location.Geocoder;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,7 +19,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -30,9 +27,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
-
-import java.util.List;
-import java.util.Locale;
 
 import es.dmoral.toasty.Toasty;
 
@@ -103,9 +97,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
                 .title(getString(R.string.jobstart_at_chauncey))
                 .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
 
-        mLakeDirection.setOnClickListener(v -> {
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lake,DEFAULT_ZOOM));
-        });
+        mLakeDirection.setOnClickListener(v -> mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(lake, DEFAULT_ZOOM)));
 
         mLakeDirection.setOnLongClickListener(v -> {
             String addr = "2930 Lake Shore Blvd. West Toronto, ON M8V1J4";
@@ -115,9 +107,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
             return true;
         });
 
-        mDufferinDirection.setOnClickListener(v -> {
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(dufferin,DEFAULT_ZOOM));
-        });
+        mDufferinDirection.setOnClickListener(v -> mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(dufferin, DEFAULT_ZOOM)));
 
         mDufferinDirection.setOnLongClickListener(v -> {
             String addr = "219 Dufferin St. #1C King and Dufferin (South of King) Building 201, Suite 1C Toronto, ON M6K3J1";
@@ -127,9 +117,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
             return true;
         });
 
-        mChaunceyDirection.setOnClickListener(v -> {
-            mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(chauncey,DEFAULT_ZOOM));
-        });
+        mChaunceyDirection.setOnClickListener(v -> mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(chauncey, DEFAULT_ZOOM)));
 
         mChaunceyDirection.setOnLongClickListener(v -> {
             String addr = "41 Chauncey Ave. Toronto, ON M8Z2Z2";
@@ -170,7 +158,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
         }
 
     }
-
+/**
     private String getCompleteAddressString(double LATITUDE, double LONGITUDE) {
         String strAdd = "";
         Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -193,7 +181,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
             Log.w("My Current location address", "Cannot get Address!");
         }
         return strAdd;
-    }
+    }**/
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
