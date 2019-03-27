@@ -10,10 +10,10 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
         android:layout_weight="1"
         android:backgroundTint="@color/colorAccent"
-        android:elevation="10dp"
-        android:layout_marginBottom="1dp">
+        android:elevation="10dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -38,16 +38,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xCalendars"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:text="@string/calendars"
+            android:foreground="@drawable/ripple_rec"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -57,16 +58,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xJobPostings"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
+            android:foreground="@drawable/ripple_rec"
             android:text="@string/job_postings"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -76,16 +78,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xFindUs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:text="@string/find_us"
+            android:foreground="@drawable/ripple_rec"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -95,16 +98,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xDonate"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
+            android:foreground="@drawable/ripple_rec"
             android:text="@string/donate"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -114,16 +118,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xUpdates"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:text="@string/updates"
+            android:foreground="@drawable/ripple_rec"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -132,16 +137,17 @@
         android:layout_weight="1"
         android:backgroundTint="@color/colorPrimary">
 
-        <TextView
+        <Button
             android:id="@+id/xContactUs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
             android:gravity="center"
+            android:foreground="@drawable/ripple_rec"
             android:text="@string/contact_us"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
-            android:textStyle="bold"
-            tools:ignore="SpUsage" />
+            android:textStyle="bold" />
     </android.support.v7.widget.CardView>
 
 

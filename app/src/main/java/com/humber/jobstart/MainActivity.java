@@ -8,9 +8,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,22 +35,26 @@ public class MainActivity extends AppCompatActivity {
         ImageView mHomeImage = findViewById(R.id.xHomeScreen);
         mHomeImage.setScaleType(ImageView.ScaleType.FIT_XY);
 
-        TextView calendars = findViewById(R.id.xCalendars);
-        calendars.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, CalendarsHome.class)));
+        Button calendars = findViewById(R.id.xCalendars);
+        calendars.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, CalendarsHome.class));
+            //calendars.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        });
 
-        TextView jobPostings = findViewById(R.id.xJobPostings);
+
+        Button jobPostings = findViewById(R.id.xJobPostings);
         jobPostings.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, JobsActivity.class)));
 
-        TextView findUs = findViewById(R.id.xFindUs);
+        Button findUs = findViewById(R.id.xFindUs);
         findUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, FindUsActivity.class)));
 
-        TextView donateUs = findViewById(R.id.xDonate);
+        Button donateUs = findViewById(R.id.xDonate);
         donateUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, DonateUs.class)));
 
-        TextView updates = findViewById(R.id.xUpdates);
+        Button updates = findViewById(R.id.xUpdates);
         updates.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, UpdatesActivity.class)));
 
-        TextView contactUs = findViewById(R.id.xContactUs);
+        Button contactUs = findViewById(R.id.xContactUs);
         contactUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ContactUsActivity.class)));
     }
 

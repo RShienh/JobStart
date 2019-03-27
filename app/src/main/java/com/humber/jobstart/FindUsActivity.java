@@ -12,7 +12,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.android.gms.common.ConnectionResult;
@@ -33,7 +33,7 @@ import es.dmoral.toasty.Toasty;
 public class FindUsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
     private GoogleMap mMap;
-    private TextView mLakeDirection, mDufferinDirection, mChaunceyDirection;
+    private Button mLakeDirection, mDufferinDirection, mChaunceyDirection;
     private static float DEFAULT_ZOOM = 16;
     private LottieAnimationView mNetworkErr;
     public static final String TAG = FindUsActivity.class.getSimpleName();
@@ -158,30 +158,32 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
         }
 
     }
-/**
-    private String getCompleteAddressString(double LATITUDE, double LONGITUDE) {
-        String strAdd = "";
-        Geocoder geocoder = new Geocoder(this, Locale.getDefault());
-        try {
-            List<Address> addresses = geocoder.getFromLocation(LATITUDE, LONGITUDE, 1);
-            if (addresses != null) {
-                Address returnedAddress = addresses.get(0);
-                StringBuilder strReturnedAddress = new StringBuilder("");
 
-                for (int i = 0; i <= returnedAddress.getMaxAddressLineIndex(); i++) {
-                    strReturnedAddress.append(returnedAddress.getAddressLine(i)).append("\n");
-                }
-                strAdd = strReturnedAddress.toString();
-                Log.w("My Current location address", strReturnedAddress.toString());
-            } else {
-                Log.w("My Current location address", "No Address returned!");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            Log.w("My Current location address", "Cannot get Address!");
-        }
-        return strAdd;
-    }**/
+    /**
+     * private String getCompleteAddressString(double LATITUDE, double LONGITUDE) {
+     * String strAdd = "";
+     * Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+     * try {
+     * List<Address> addresses = geocoder.getFromLocation(LATITUDE, LONGITUDE, 1);
+     * if (addresses != null) {
+     * Address returnedAddress = addresses.get(0);
+     * StringBuilder strReturnedAddress = new StringBuilder("");
+     * <p>
+     * for (int i = 0; i <= returnedAddress.getMaxAddressLineIndex(); i++) {
+     * strReturnedAddress.append(returnedAddress.getAddressLine(i)).append("\n");
+     * }
+     * strAdd = strReturnedAddress.toString();
+     * Log.w("My Current location address", strReturnedAddress.toString());
+     * } else {
+     * Log.w("My Current location address", "No Address returned!");
+     * }
+     * } catch (Exception e) {
+     * e.printStackTrace();
+     * Log.w("My Current location address", "Cannot get Address!");
+     * }
+     * return strAdd;
+     * }
+     **/
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {

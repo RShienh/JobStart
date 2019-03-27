@@ -35,11 +35,9 @@ public class DonateUs extends AppCompatActivity {
             public void onProgressChanged(WebView view, int progress) {
                 if (progress < 100 && loading.getVisibility() == ProgressBar.GONE) {
                     loading.setVisibility(ProgressBar.VISIBLE);
-                    // donate.setVisibility(View.VISIBLE);
                 }
                 if (progress == 100) {
                     loading.setVisibility(ProgressBar.GONE);
-                    // txtview.setVisibility(View.GONE);
                 }
             }
         });

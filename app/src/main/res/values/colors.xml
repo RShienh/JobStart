@@ -10,4 +10,5 @@
     <color name="grey">#D3D3D3</color>
     <color name="red">#DD4B3E</color>
     <color name="burgundy">#822F2B</color>
+    <color name="black">#000000</color>
 </resources>

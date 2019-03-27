@@ -2,11 +2,13 @@ package com.humber.jobstart;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -15,7 +17,7 @@ import es.dmoral.toasty.Toasty;
 public class ContactUsActivity extends AppCompatActivity {
 
     private CardView mLake, mDuff, mChaun, mLakeHide, mDuffHide, mChauHide;
-    private TextView mLakeCall, mDuffCall, mChaunCall;
+    private Button mLakeCall, mDuffCall, mChaunCall;
     private AlertDialog.Builder builder;
     private LinearLayout.LayoutParams lakeLayoutParams, duffLayoutParams, chaunLayoutParams;
     private float major = 5, minor = 2;
@@ -39,7 +41,7 @@ public class ContactUsActivity extends AppCompatActivity {
         builder = new AlertDialog.Builder(this);
 
         mLakeCall.setOnClickListener(v -> {
-            builder.setMessage("Do you want to call Lakeshore number of JobStart?").setTitle("Calling?").setCancelable(false)
+            builder.setMessage("Do you want to call Lakeshore number of JobStart?").setTitle("Calling?").setCancelable(true)
                     .setPositiveButton("Yes", (dialog, which) -> {
                         Intent i = new Intent(Intent.ACTION_CALL);
                         i.setData(Uri.parse("tel:4162312295"));
@@ -50,7 +52,7 @@ public class ContactUsActivity extends AppCompatActivity {
         });
 
         mDuffCall.setOnClickListener(v -> {
-            builder.setMessage("Do you want to call Dufferin number of JobStart?").setTitle("Calling?").setCancelable(false)
+            builder.setMessage("Do you want to call Dufferin number of JobStart?").setTitle("Calling?").setCancelable(true)
                     .setPositiveButton("Yes", (dialog, which) -> {
                         Intent i = new Intent(Intent.ACTION_CALL);
                         i.setData(Uri.parse("tel:4162312295"));
@@ -62,7 +64,7 @@ public class ContactUsActivity extends AppCompatActivity {
         });
 
         mChaunCall.setOnClickListener(v -> {
-            builder.setMessage("Do you want to call Chauncey number of JobStart?").setTitle("Calling?").setCancelable(false)
+            builder.setMessage("Do you want to call Chauncey number of JobStart?").setTitle("Calling?").setCancelable(true)
                     .setPositiveButton("Yes", (dialog, which) -> {
                         Intent i = new Intent(Intent.ACTION_CALL);
                         i.setData(Uri.parse("tel:4162312295"));

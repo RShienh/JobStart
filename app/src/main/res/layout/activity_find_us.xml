@@ -75,12 +75,13 @@
                     app:cardCornerRadius="5dp"
                     tools:ignore="NestedWeights">
 
-                    <TextView
+                    <Button
                         android:id="@+id/xLakeDirection"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="@color/green"
+                        android:background="@color/colorPrimary"
+                        android:foreground="@drawable/ripple_rec"
                         android:gravity="center"
                         android:text="@string/jobstart_at_lakeshore"
                         android:textAlignment="center"
@@ -98,12 +99,13 @@
                     app:cardCornerRadius="5dp"
                     tools:ignore="NestedWeights">
 
-                    <TextView
+                    <Button
                         android:id="@+id/xDufferinDirection"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="@color/green"
+                        android:background="@color/colorPrimary"
+                        android:foreground="@drawable/ripple_rec"
                         android:gravity="center"
                         android:text="@string/jobstart_at_dufferin"
                         android:textAlignment="center"
@@ -122,12 +124,13 @@
                     app:cardCornerRadius="5dp"
                     tools:ignore="NestedWeights">
 
-                    <TextView
+                    <Button
                         android:id="@+id/xChaunceyDirection"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:background="@color/green"
+                        android:background="@color/colorPrimary"
+                        android:foreground="@drawable/ripple_rec"
                         android:gravity="center"
                         android:text="@string/jobstart_at_chauncey"
                         android:textAlignment="center"

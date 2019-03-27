@@ -25,4 +25,7 @@
     <string name="jobstart_at_lakeshore">JobStart at Lakeshore</string>
     <string name="jobstart_at_dufferin">JobStart at Dufferin</string>
     <string name="jobstart_at_chauncey">JobStart at Chauncey</string>
+    <string name="LakeJobCalendar">
+        <![CDATA[<b>JobStart at Lakeshore</b>\n 2930 Lake Shore Blvd. West\n (Islington Avenue &amp; Lake Shore Blvd. West) ]]>
+    </string>
 </resources>
