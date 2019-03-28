@@ -28,4 +28,8 @@
     <string name="LakeJobCalendar">
         <![CDATA[<b>JobStart at Lakeshore</b>\n 2930 Lake Shore Blvd. West\n (Islington Avenue &amp; Lake Shore Blvd. West) ]]>
     </string>
+    <string name="title">Title</string>
+    <string name="type">Type</string>
+    <string name="_12_12_2019">12/12/2019</string>
+    <string name="status">Status</string>
 </resources>

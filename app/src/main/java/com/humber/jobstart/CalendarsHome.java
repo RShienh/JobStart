@@ -19,7 +19,7 @@ public class CalendarsHome extends AppCompatActivity {
             "(King Street West & Dufferin Street)";
     String cTitle = "JobStart at Chauncey\n";
     String cAddr = "41 Chauncey Avenue\n " +
-            "(Islington Avenue & South of Bloor Street West";
+            "(Islington Avenue & South of Bloor Street West)";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
