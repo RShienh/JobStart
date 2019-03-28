@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="@color/grey"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp"
+    tools:context=".ViewJobActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/job_details"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/xGetJobID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:textColor="@color/black"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <com.humber.jobstart.ViewHandlers.PerfectScrollableTextView
+                    android:id="@+id/xGetJobDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="top|start"
+                    android:textColor="@color/black"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    tools:ignore="LabelFor" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobSalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                <TextView
+                    android:id="@+id/xGetJobApplyContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/black"
+                    android:maxLines="2"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

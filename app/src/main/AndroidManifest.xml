@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -21,16 +21,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ChaunceyCalendarActivity"
-            android:parentActivityName=".CalendarsHome"/>
-        <activity android:name=".DufferinCalendarActivity"
-            android:parentActivityName=".CalendarsHome"/>
-        <activity android:name=".LakeCalendarActivity"
-            android:parentActivityName=".CalendarsHome"/>
-        <activity android:name=".ContactUsActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".UpdatesActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ViewJobActivity"
+            android:parentActivityName=".JobsActivity"/>
+        <activity
+            android:name=".ChaunceyCalendarActivity"
+            android:parentActivityName=".CalendarsHome" />
+        <activity
+            android:name=".DufferinCalendarActivity"
+            android:parentActivityName=".CalendarsHome" />
+        <activity
+            android:name=".LakeCalendarActivity"
+            android:parentActivityName=".CalendarsHome" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UpdatesActivity"
+            android:parentActivityName=".MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,14 +52,15 @@
 
         <activity
             android:name=".FindUsActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/title_activity_find_us">
+            android:label="@string/title_activity_find_us"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.humber.jobstart.MainActivity" />
         </activity>
-        <activity android:name=".JobsActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".JobsActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DonateUs"
             android:parentActivityName=".MainActivity" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="11"
     tools:context=".CalendarsHome">
@@ -36,8 +37,8 @@
                 android:gravity="center"
                 android:text="@string/list_of_calendars"
                 android:textAllCaps="true"
-                android:textColor="@color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 tools:ignore="SpUsage" />
         </LinearLayout>

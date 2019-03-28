@@ -26,6 +26,7 @@ public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.Jobs
         holder.mDate.setText(model.getPostDate());
         holder.mStatus.setText(model.getStatus());
         holder.mType.setText(model.getType());
+        holder.mPay.setText(model.getSalary());
     }
 
     @NonNull
@@ -38,7 +39,7 @@ public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.Jobs
 
     class JobsHolder extends RecyclerView.ViewHolder {
 
-        TextView mTitle, mDate, mType, mStatus;
+        TextView mTitle, mDate, mType, mStatus, mPay;
 
         public JobsHolder(@NonNull View itemView) {
             super(itemView);
@@ -46,6 +47,7 @@ public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.Jobs
             mDate = itemView.findViewById(R.id.xJobDate);
             mType = itemView.findViewById(R.id.xJobType);
             mStatus = itemView.findViewById(R.id.xJobStatus);
+            mPay = itemView.findViewById(R.id.xJobPay);
 
             itemView.setOnClickListener(v -> {
                 int pos = getAdapterPosition();
