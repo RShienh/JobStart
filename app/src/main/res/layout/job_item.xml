@@ -7,7 +7,7 @@
     android:layout_marginStart="5dp"
     android:layout_marginTop="5dp"
     android:layout_marginEnd="5dp"
-    android:backgroundTint="@color/grey"
+    android:backgroundTint="#eee"
     android:elevation="8dp"
     android:padding="5dp"
     app:cardCornerRadius="5dp">
