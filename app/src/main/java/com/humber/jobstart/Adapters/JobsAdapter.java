@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -10,7 +10,8 @@ import android.widget.TextView;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.humber.jobstart.models.Jobs;
+import com.humber.jobstart.R;
+import com.humber.jobstart.Models.Jobs;
 
 public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.JobsHolder> {
 

@@ -1,4 +1,4 @@
-package com.humber.jobstart.models;
+package com.humber.jobstart.Models;
 
 import android.net.Uri;
 

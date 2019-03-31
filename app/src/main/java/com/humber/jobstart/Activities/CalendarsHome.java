@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Activities;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,6 +8,11 @@ import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.widget.Button;
+
+import com.humber.jobstart.Activities.Calendars.ChaunceyCalendarActivity;
+import com.humber.jobstart.Activities.Calendars.DufferinCalendarActivity;
+import com.humber.jobstart.Activities.Calendars.LakeCalendarActivity;
+import com.humber.jobstart.R;
 
 public class CalendarsHome extends AppCompatActivity {
 

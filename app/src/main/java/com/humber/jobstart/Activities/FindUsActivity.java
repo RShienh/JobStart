@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Activities;
 
 import android.Manifest;
 import android.content.Intent;
@@ -27,6 +27,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.Task;
+import com.humber.jobstart.R;
 
 import es.dmoral.toasty.Toasty;
 

@@ -21,23 +21,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ViewJobActivity"
-            android:parentActivityName=".JobsActivity"/>
+        <activity android:name=".Activities.Jobs.ViewJobActivity"
+            android:parentActivityName=".Activities.JobsActivity"/>
         <activity
-            android:name=".ChaunceyCalendarActivity"
-            android:parentActivityName=".CalendarsHome" />
+            android:name=".Activities.Calendars.ChaunceyCalendarActivity"
+            android:parentActivityName=".Activities.CalendarsHome" />
         <activity
-            android:name=".DufferinCalendarActivity"
-            android:parentActivityName=".CalendarsHome" />
+            android:name=".Activities.Calendars.DufferinCalendarActivity"
+            android:parentActivityName=".Activities.CalendarsHome" />
         <activity
-            android:name=".LakeCalendarActivity"
-            android:parentActivityName=".CalendarsHome" />
+            android:name=".Activities.Calendars.LakeCalendarActivity"
+            android:parentActivityName=".Activities.CalendarsHome" />
         <activity
-            android:name=".ContactUsActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Activities.ContactUsActivity"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
-            android:name=".UpdatesActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Activities.UpdatesActivity"
+            android:parentActivityName=".Activities.MainActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -51,23 +51,23 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".FindUsActivity"
+            android:name=".Activities.FindUsActivity"
             android:label="@string/title_activity_find_us"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.humber.jobstart.MainActivity" />
+                android:value="com.humber.jobstart.Activities.MainActivity" />
         </activity>
         <activity
-            android:name=".JobsActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Activities.JobsActivity"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
-            android:name=".DonateUs"
-            android:parentActivityName=".MainActivity" />
+            android:name=".Activities.DonateUs"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity
-            android:name=".CalendarsHome"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name=".Activities.CalendarsHome"
+            android:parentActivityName=".Activities.MainActivity" />
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

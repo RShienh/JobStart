@@ -6,7 +6,7 @@
     android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".ChaunceyCalendarActivity">
+    tools:context=".Activities.Calendars.ChaunceyCalendarActivity">
 
     <include layout="@layout/app_bar" />
 </LinearLayout>

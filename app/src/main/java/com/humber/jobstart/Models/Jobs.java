@@ -1,4 +1,4 @@
-package com.humber.jobstart.models;
+package com.humber.jobstart.Models;
 
 import com.google.firebase.firestore.Exclude;
 

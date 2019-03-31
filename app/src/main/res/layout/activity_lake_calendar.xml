@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".LakeCalendarActivity"
+    tools:context=".Activities.Calendars.LakeCalendarActivity"
     android:background="@color/colorAccent">
 
     <include layout="@layout/app_bar"/>

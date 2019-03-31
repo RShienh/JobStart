@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.humber.jobstart.R;
 
 public class DonateUs extends AppCompatActivity {
 

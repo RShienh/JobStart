@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.humber.jobstart.R;
 
 import es.dmoral.toasty.Toasty;
 

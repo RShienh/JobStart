@@ -1,4 +1,4 @@
-package com.humber.jobstart;
+package com.humber.jobstart.Activities.Jobs;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -9,8 +9,9 @@ import android.text.style.StyleSpan;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.humber.jobstart.R;
 import com.humber.jobstart.ViewHandlers.PerfectScrollableTextView;
-import com.humber.jobstart.models.Jobs;
+import com.humber.jobstart.Models.Jobs;
 
 public class ViewJobActivity extends AppCompatActivity {
 

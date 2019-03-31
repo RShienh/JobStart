@@ -7,7 +7,7 @@
     android:backgroundTint="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="11"
-    tools:context=".CalendarsHome">
+    tools:context=".Activities.CalendarsHome">
 
     <android.support.design.card.MaterialCardView
         android:layout_width="match_parent"
