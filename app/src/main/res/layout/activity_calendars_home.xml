@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/colorAccent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="11"
     tools:context=".Activities.CalendarsHome">
@@ -36,6 +36,10 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
+                android:shadowColor="#aaa"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 android:text="@string/list_of_calendars"
                 android:textAllCaps="true"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -51,7 +55,7 @@
         android:layout_margin="2dp"
         android:layout_weight="3"
         android:backgroundTint="@color/colorPrimary"
-        app:cardCornerRadius="2dp"
+        app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
         <Button
@@ -75,7 +79,7 @@
         android:layout_marginEnd="2dp"
         android:layout_weight="3"
         android:backgroundTint="@color/colorPrimary"
-        app:cardCornerRadius="2dp"
+        app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
         <Button
@@ -99,7 +103,7 @@
         android:layout_margin="2dp"
         android:layout_weight="3"
         android:backgroundTint="@color/colorPrimary"
-        app:cardCornerRadius="2dp"
+        app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
         <Button

@@ -131,7 +131,7 @@
             android:background="@color/colorPrimary"
             android:foreground="?attr/selectableItemBackgroundBorderless"
             android:gravity="center"
-            android:text="@string/updates"
+            android:text="@string/social_media"
             android:textColor="@color/white"
             android:textSize="@dimen/textsize"
             android:textStyle="bold" />

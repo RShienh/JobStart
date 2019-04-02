@@ -2,7 +2,6 @@ package com.humber.jobstart.Activities;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +9,6 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.humber.jobstart.R;
 
@@ -41,6 +39,12 @@ public class ContactUsActivity extends AppCompatActivity {
         mChaunCall = findViewById(R.id.xChaunCall);
 
         builder = new AlertDialog.Builder(this);
+
+        /**Animation SlideUp = AnimationUtils.loadAnimation(getBaseContext(), R.anim.slide_up);
+         Animation SlideDown = AnimationUtils.loadAnimation(getBaseContext(), R.anim.slide_down);
+         Animation Move = AnimationUtils.loadAnimation(getBaseContext(), R.anim.move);
+         Animation Blink = AnimationUtils.loadAnimation(getBaseContext(), R.anim.blink);**/
+
 
         mLakeCall.setOnClickListener(v -> {
             builder.setMessage("Do you want to call Lakeshore number of JobStart?").setTitle("Calling?").setCancelable(true)
@@ -93,6 +97,9 @@ public class ContactUsActivity extends AppCompatActivity {
         mLakeHide.setOnClickListener(v -> {
             setWeights(major, minor, minor);
             mLakeHide.setVisibility(View.GONE);
+            //  mLake.startAnimation(Blink);
+            //  mDuffHide.startAnimation(Blink);
+            //  mChauHide.startAnimation(Blink);
             mLake.setVisibility(View.VISIBLE);
             mDuff.setVisibility(View.GONE);
             mChaun.setVisibility(View.GONE);
@@ -102,6 +109,9 @@ public class ContactUsActivity extends AppCompatActivity {
 
         mDuffHide.setOnClickListener(v -> {
             setWeights(minor, major, minor);
+            //  mLake.startAnimation(SlideDown);
+            //  mDuff.startAnimation(SlideUp);
+            //  mChaun.startAnimation(SlideDown);
             mDuff.setVisibility(View.VISIBLE);
             mLakeHide.setVisibility(View.VISIBLE);
             mDuffHide.setVisibility(View.GONE);
@@ -112,6 +122,9 @@ public class ContactUsActivity extends AppCompatActivity {
 
         mChauHide.setOnClickListener(v -> {
             setWeights(minor, minor, major);
+            //  mLake.startAnimation(SlideDown);
+            //   mDuff.startAnimation(SlideDown);
+            //  mChaun.startAnimation(SlideUp);
             mChaun.setVisibility(View.VISIBLE);
             mLakeHide.setVisibility(View.VISIBLE);
             mDuffHide.setVisibility(View.VISIBLE);

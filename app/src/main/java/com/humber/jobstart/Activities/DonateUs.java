@@ -24,14 +24,6 @@ public class DonateUs extends AppCompatActivity {
         loading = findViewById(R.id.xLoading);
 
         donate = findViewById(R.id.xWebView);
-        donate.setWebViewClient(new WebViewClient());
-        donate.loadUrl("https://www.canadahelps.org/en/charities/jobstart/");
-        WebSettings webSettings = donate.getSettings();
-        webSettings.setSupportZoom(true);
-        webSettings.setBuiltInZoomControls(true);
-        webSettings.setDisplayZoomControls(false);
-        webSettings.setJavaScriptEnabled(true);
-
         donate.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView view, int progress) {
                 if (progress < 100 && loading.getVisibility() == ProgressBar.GONE) {
@@ -42,6 +34,16 @@ public class DonateUs extends AppCompatActivity {
                 }
             }
         });
+
+        donate.setWebViewClient(new WebViewClient());
+        donate.loadUrl("https://www.canadahelps.org/en/charities/jobstart/");
+        WebSettings webSettings = donate.getSettings();
+        webSettings.setSupportZoom(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
+        webSettings.setJavaScriptEnabled(true);
+
+
     }
 
     @Override

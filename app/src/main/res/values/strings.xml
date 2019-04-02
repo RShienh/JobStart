@@ -34,4 +34,14 @@
     <string name="status">Status</string>
     <string name="pay_rate">Pay Rate</string>
     <string name="job_details">Job Details</string>
+    <string name="social_media">Social Media</string>
+    <string name="twitter_jobstart">https://twitter.com/jobstartto</string>
+    <string name="facebook_jobstart">https://www.facebook.com/JobStartTO/</string>
+    <string name="linkedin_jobstart">https://www.linkedin.com/company/job-start/</string>
+    <string name="youtube_jobstart">https://www.youtube.com/channel/UCcz4CSrzwM6ssUKQdmJ2c6g/featured</string>
+    <string name="checkout_our_twitter_handle_jobstartto">Checkout our twitter handle @jobstartto</string>
+    <string name="facebook_jobstart_checkout">Checkout our facebook page @JobStartTO</string>
+    <string name="linkedin_checkout">Checkout our company page on LinkedIn @job-start</string>
+    <string name="twitter_id">768850872436678656</string>
+    <string name="we_have_a_youtube_page_too_jobstart">We have a YouTube page too! @JobStart</string>
 </resources>

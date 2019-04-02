@@ -1,12 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Activities.UpdatesActivity"
-    android:background="@color/colorAccent">
+    tools:context=".Activities.UpdatesActivity">
 
-    <include layout="@layout/app_bar"/>
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/colorAccent"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowColor="#aaa"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="@string/social_media"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/xTwitterFeed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/twitter"
+        android:foreground="@drawable/ripple_rec"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:src="@drawable/twitter_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:shadowColor="#aaa"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="@string/checkout_our_twitter_handle_jobstartto"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/xLinkedinFeed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/linkedin"
+        android:foreground="@drawable/ripple_rec"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:src="@drawable/linkedin_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:shadowColor="#aaa"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="@string/linkedin_checkout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/xFacebookFeed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/facebook"
+        android:foreground="@drawable/ripple_rec"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:src="@drawable/facebook_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:shadowColor="#aaa"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="@string/facebook_jobstart_checkout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/xYoutube_feed"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:layout_weight="2"
+        android:backgroundTint="@color/youtube"
+        android:foreground="@drawable/ripple_rec"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:padding="2dp"
+                android:src="@drawable/youtube_social_icon_red" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:enabled="false"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:shadowColor="#aaa"
+                android:shadowDx="4"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:text="@string/we_have_a_youtube_page_too_jobstart"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.design.card.MaterialCardView>
+
 </LinearLayout>

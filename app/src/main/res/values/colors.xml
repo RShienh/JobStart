@@ -3,6 +3,7 @@
     <color name="colorPrimary">#0c664e</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#e2a02f</color>
+    <color name="colorAccentDark">#BC7D13</color>
     <color name="white">#ffffff</color>
     <color name="blue">#4A89F3</color>
     <color name="green">#1EA362</color>
@@ -11,4 +12,8 @@
     <color name="red">#DD4B3E</color>
     <color name="burgundy">#822F2B</color>
     <color name="black">#000000</color>
+    <color name="twitter">#55acee</color>
+    <color name="facebook">#3b5999</color>
+    <color name="linkedin">#0077B5</color>
+    <color name="youtube">#cd201f</color>
 </resources>
