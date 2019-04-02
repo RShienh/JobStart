@@ -44,4 +44,6 @@
     <string name="linkedin_checkout">Checkout our company page on LinkedIn @job-start</string>
     <string name="twitter_id">768850872436678656</string>
     <string name="we_have_a_youtube_page_too_jobstart">We have a YouTube page too! @JobStart</string>
+    <string name="posted_date">Posted Date</string>
+    <string name="event_data">Event Data</string>
 </resources>

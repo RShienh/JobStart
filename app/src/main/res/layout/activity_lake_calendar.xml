@@ -3,10 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context=".Activities.Calendars.LakeCalendarActivity"
-    android:background="@color/colorAccent">
+    tools:context=".Activities.Calendars.LakeCalendarActivity">
 
-    <include layout="@layout/app_bar"/>
+    <include layout="@layout/app_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xLakeEventRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:paddingTop="5dp" />
 </LinearLayout>
