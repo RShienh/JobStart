@@ -13,6 +13,12 @@ import android.widget.ImageView;
 
 import com.humber.jobstart.R;
 
+/**
+ * The type Main activity.
+ * This is the first activity which appears when app is open
+ * It asks for all relevant permissions which on being granted will continue the app to run otherwise will simply exit
+ * It has all the connections to other activities
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -38,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         Button calendars = findViewById(R.id.xCalendars);
         calendars.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, CalendarsHome.class));
-            //calendars.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
         });
 
 
@@ -58,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
         contactUs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ContactUsActivity.class)));
     }
 
+    /**
+     * Has permissions boolean.
+     *
+     * @param context     the context
+     * @param permissions the permissions
+     * @return the boolean
+     */
     public static boolean hasPermissions(Context context, String... permissions) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && context != null && permissions != null) {
             for (String permission : permissions) {

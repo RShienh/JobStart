@@ -13,9 +13,27 @@ import com.humber.jobstart.R;
 
 import java.util.List;
 
+/**
+ * The type Updates activity.
+ * This activity was supposed to get updates from social media
+ * Since we do not have access to the JobStart Social media accounts so,
+ * we have just added intents which makes call to the installed app in the phone which points to JobStart Social media pages
+ */
 public class UpdatesActivity extends AppCompatActivity {
 
-    MaterialCardView mTwitter, mLinkedIn, mFacebook, mYoutube;
+    /**
+     * The M twitter.
+     */
+    MaterialCardView mTwitter, /**
+     * The M linked in.
+     */
+    mLinkedIn, /**
+     * The M facebook.
+     */
+    mFacebook, /**
+     * The M youtube.
+     */
+    mYoutube;
     private String TAG = "UPDATES_ACTIVITY";
 
     @Override

@@ -13,6 +13,11 @@ import com.humber.jobstart.Adapters.EventsAdapter;
 import com.humber.jobstart.Models.Events;
 import com.humber.jobstart.R;
 
+/**
+ * The type Dufferin calendar activity.
+ * This Activity is used to display the data related to Dufferin Calendar
+ * It fetches data using FireStore cloud NoSQL database
+ */
 public class DufferinCalendarActivity extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();

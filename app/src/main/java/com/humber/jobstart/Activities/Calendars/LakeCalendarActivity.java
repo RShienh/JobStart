@@ -1,16 +1,9 @@
 package com.humber.jobstart.Activities.Calendars;
 
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
-import android.view.View;
 
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.CollectionReference;
@@ -20,6 +13,11 @@ import com.humber.jobstart.Adapters.EventsAdapter;
 import com.humber.jobstart.Models.Events;
 import com.humber.jobstart.R;
 
+/**
+ * The type Lake calendar activity.
+ * This Activity is used to display the data related to LakeShore Calendar
+ * * It fetches data using FireStore cloud NoSQL database
+ */
 public class LakeCalendarActivity extends AppCompatActivity {
 
     private FirebaseFirestore db = FirebaseFirestore.getInstance();

@@ -14,6 +14,12 @@ import com.humber.jobstart.R;
 
 import es.dmoral.toasty.Toasty;
 
+/**
+ * The type Contact us activity.
+ * This activity is used to display the call numbers of three locations of JobStart
+ * I have also added a way to dynamically change the view so that when customer clicks on one of the location, the other two views shrink and the selected one expands
+ * It has intents to make a call and also a dialog to ask before making a call
+ */
 public class ContactUsActivity extends AppCompatActivity {
 
     private CardView mLake, mDuff, mChaun, mLakeHide, mDuffHide, mChauHide;
@@ -39,11 +45,6 @@ public class ContactUsActivity extends AppCompatActivity {
         mChaunCall = findViewById(R.id.xChaunCall);
 
         builder = new AlertDialog.Builder(this);
-
-        /**Animation SlideUp = AnimationUtils.loadAnimation(getBaseContext(), R.anim.slide_up);
-         Animation SlideDown = AnimationUtils.loadAnimation(getBaseContext(), R.anim.slide_down);
-         Animation Move = AnimationUtils.loadAnimation(getBaseContext(), R.anim.move);
-         Animation Blink = AnimationUtils.loadAnimation(getBaseContext(), R.anim.blink);**/
 
 
         mLakeCall.setOnClickListener(v -> {
@@ -97,9 +98,6 @@ public class ContactUsActivity extends AppCompatActivity {
         mLakeHide.setOnClickListener(v -> {
             setWeights(major, minor, minor);
             mLakeHide.setVisibility(View.GONE);
-            //  mLake.startAnimation(Blink);
-            //  mDuffHide.startAnimation(Blink);
-            //  mChauHide.startAnimation(Blink);
             mLake.setVisibility(View.VISIBLE);
             mDuff.setVisibility(View.GONE);
             mChaun.setVisibility(View.GONE);
@@ -109,9 +107,6 @@ public class ContactUsActivity extends AppCompatActivity {
 
         mDuffHide.setOnClickListener(v -> {
             setWeights(minor, major, minor);
-            //  mLake.startAnimation(SlideDown);
-            //  mDuff.startAnimation(SlideUp);
-            //  mChaun.startAnimation(SlideDown);
             mDuff.setVisibility(View.VISIBLE);
             mLakeHide.setVisibility(View.VISIBLE);
             mDuffHide.setVisibility(View.GONE);
@@ -122,9 +117,6 @@ public class ContactUsActivity extends AppCompatActivity {
 
         mChauHide.setOnClickListener(v -> {
             setWeights(minor, minor, major);
-            //  mLake.startAnimation(SlideDown);
-            //   mDuff.startAnimation(SlideDown);
-            //  mChaun.startAnimation(SlideUp);
             mChaun.setVisibility(View.VISIBLE);
             mLakeHide.setVisibility(View.VISIBLE);
             mDuffHide.setVisibility(View.VISIBLE);

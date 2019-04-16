@@ -13,10 +13,19 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.humber.jobstart.R;
 import com.humber.jobstart.Models.Jobs;
 
+/**
+ * The type Jobs adapter.
+ * This adapter handles the data from FireStore to Recycler List View
+ */
 public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.JobsHolder> {
 
     private OnItemClickListener listener;
 
+    /**
+     * Instantiates a new Jobs adapter.
+     *
+     * @param options the options
+     */
     public JobsAdapter(@NonNull FirestoreRecyclerOptions<Jobs> options) {
         super(options);
     }
@@ -38,10 +47,33 @@ public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.Jobs
     }
 
 
+    /**
+     * The type Jobs holder.
+     */
     class JobsHolder extends RecyclerView.ViewHolder {
 
-        TextView mTitle, mDate, mType, mStatus, mPay;
+        /**
+         * The M title.
+         */
+        TextView mTitle, /**
+         * The M date.
+         */
+        mDate, /**
+         * The M type.
+         */
+        mType, /**
+         * The M status.
+         */
+        mStatus, /**
+         * The M pay.
+         */
+        mPay;
 
+        /**
+         * Instantiates a new Jobs holder.
+         *
+         * @param itemView the item view
+         */
         public JobsHolder(@NonNull View itemView) {
             super(itemView);
             mTitle = itemView.findViewById(R.id.xJobTitle);
@@ -60,11 +92,25 @@ public class JobsAdapter extends FirestoreRecyclerAdapter<Jobs, JobsAdapter.Jobs
         }
     }
 
+    /**
+     * The interface On item click listener.
+     */
     public interface OnItemClickListener {
+        /**
+         * On item click.
+         *
+         * @param documentSnapshot the document snapshot
+         * @param position         the position
+         */
         void OnItemClick(DocumentSnapshot documentSnapshot, int position);
 
     }
 
+    /**
+     * Sets on item click listener.
+     *
+     * @param listener the listener
+     */
     public void setOnItemClickListener(OnItemClickListener listener) {
         this.listener = listener;
     }

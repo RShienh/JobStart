@@ -13,6 +13,9 @@ import com.humber.jobstart.R;
 import com.humber.jobstart.ViewHandlers.PerfectScrollableTextView;
 import com.humber.jobstart.Models.Jobs;
 
+/**
+ * The type View job activity.
+ */
 public class ViewJobActivity extends AppCompatActivity {
 
     private TextView mGetJobTitle,
@@ -71,6 +74,12 @@ public class ViewJobActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Sets spannable string.
+     *
+     * @param textString the text string
+     * @return the spannable string
+     */
     public SpannableString setSpannableString(String textString) {
 
         SpannableString spanString = new SpannableString(textString);

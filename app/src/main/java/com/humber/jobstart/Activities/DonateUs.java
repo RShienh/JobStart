@@ -11,6 +11,11 @@ import android.widget.ProgressBar;
 import com.airbnb.lottie.LottieAnimationView;
 import com.humber.jobstart.R;
 
+/**
+ * The type Donate us.
+ * This inflates the webview in built in Android. It has functionalities of a normal chrome browser
+ * User can use this webview to actually make a donation
+ */
 public class DonateUs extends AppCompatActivity {
 
     private WebView donate;

@@ -31,12 +31,21 @@ import com.humber.jobstart.R;
 
 import es.dmoral.toasty.Toasty;
 
+/**
+ * The type Find us activity.
+ * This activity inflates the Google MapView which uses Maps and Location API from Google
+ * I have added markers to display at the location of JobStart
+ * This map has all functionality of a normal Map except for direction for which I am using a call to inbuilt MAP app of Android
+ */
 public class FindUsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.OnConnectionFailedListener, GoogleApiClient.ConnectionCallbacks {
 
     private GoogleMap mMap;
     private Button mLakeDirection, mDufferinDirection, mChaunceyDirection;
     private static float DEFAULT_ZOOM = 16;
     private LottieAnimationView mNetworkErr;
+    /**
+     * The constant TAG.
+     */
     public static final String TAG = FindUsActivity.class.getSimpleName();
     private double lakeLat = 43.601055;
     private double lakeLng = -79.505137;
@@ -45,6 +54,10 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
     private double chauLat = 43.636861;
     private double chauLng = -79.525185;
 
+    /**
+     * This onCreate Method is the first method called upon on creation of an Activity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +74,10 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
         mChaunceyDirection = findViewById(R.id.xChaunceyDirection);
     }
 
+    /**
+     * onMapReady method implements markers and other map features after connection to Map api has been successful
+     * @param googleMap
+     */
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -131,6 +148,10 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
         Toasty.info(getApplicationContext(), "Long press the location button to get directions", Toasty.LENGTH_LONG).show();
     }
 
+    /**
+     * getCurrentLocation gets the current location of the user, by showing a blue dot and a marker on the map
+     */
+
     private void getCurrentLocation() {
         Log.d(TAG, "GET CURRENT LOCATION");
         FusedLocationProviderClient mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
@@ -161,6 +182,7 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
     }
 
     /**
+     * Code to get complete location address etc
      * private String getCompleteAddressString(double LATITUDE, double LONGITUDE) {
      * String strAdd = "";
      * Geocoder geocoder = new Geocoder(this, Locale.getDefault());
@@ -186,6 +208,11 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
      * }
      **/
 
+    /**
+     * If connection is failed then whole app will exit
+     * If connection to Google Maps api is successful then it will just show a message of being ready
+     * @param connectionResult
+     */
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         String connErr = connectionResult.toString();

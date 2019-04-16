@@ -18,6 +18,12 @@ import com.humber.jobstart.Adapters.JobsAdapter;
 import com.humber.jobstart.Models.Jobs;
 import com.humber.jobstart.R;
 
+
+/**
+ * The type Jobs activity.
+ * This activity displays the list of Jobs in a Recycler List view
+ * It makes call to FireStore Google Cloud NoSQL database for a specific collection called Jobs
+ */
 public class JobsActivity extends AppCompatActivity {
 
 
@@ -38,6 +44,9 @@ public class JobsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * SetupRecyclerView sets up the list view in the activity
+     */
     private void setupRecyclerView() {
         Query q = jobsRef.orderBy("postDate", Query.Direction.DESCENDING);
 
