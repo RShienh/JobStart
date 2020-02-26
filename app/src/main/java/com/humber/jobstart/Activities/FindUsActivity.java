@@ -67,7 +67,6 @@ public class FindUsActivity extends FragmentActivity implements OnMapReadyCallba
         if (mapFragment != null) {
             mapFragment.getMapAsync(this);
         }
-
         mNetworkErr = findViewById(R.id.xConnectErrorAnim);
         mLakeDirection = findViewById(R.id.xLakeDirection);
         mDufferinDirection = findViewById(R.id.xDufferinDirection);
